@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #d4547a;
+  --secondary: #a73e42;
+  --bg-dark: #220d14;
+  --bg-darker: #2a151b;
+  --text-main: #ffffff;
+  --text-secondary: #d0d0d0;
+  --accent: #e94560;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #220d14;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Offset anchored sections so they don't hide behind the floating navbar */
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #220d14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #a73e42, #d4547a);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #d4547a, #e94560);
+}
+
+/* Selection */
+::selection {
+  background: #d4547a;
+  color: #ffffff;
+}
+
+/* Focus visible */
+*:focus-visible {
+  outline: 2px solid #d4547a;
+  outline-offset: 2px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Custom utility classes */
+.text-balance {
+  text-wrap: balance;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 84, 122, 0.3);
+}
+
+.wine-gradient-text {
+  background: linear-gradient(135deg, #d4547a 0%, #e94560 50%, #a73e42 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #d0d0d0 0%,
+    #ffffff 50%,
+    #d0d0d0 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
