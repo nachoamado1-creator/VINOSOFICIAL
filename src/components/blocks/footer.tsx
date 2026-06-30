@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-white font-serif font-bold text-2xl mb-4">
-              Vinos Oficial
+              Vinoteca Tandil
             </h3>
             <p className="text-text-secondary leading-relaxed mb-4">
               Experiencia premium de cata de vinos en el corazón de Tandil,
@@ -37,14 +37,14 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:info@vinosoficial.com"
+                  href="mailto:info@vinotecatandil.com"
                   className="flex items-center gap-3 text-text-secondary hover:text-wine-primary transition-colors group cursor-pointer"
                 >
                   <Mail
                     className="w-4 h-4 group-hover:scale-110 transition-transform"
                     aria-hidden="true"
                   />
-                  info@vinosoficial.com
+                  info@vinotecatandil.com
                 </a>
               </li>
               <li>
@@ -90,7 +90,7 @@ const Footer = () => {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-text-secondary text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Vinos Oficial. Todos los derechos
+            © {new Date().getFullYear()} Vinoteca Tandil. Todos los derechos
             reservados.
           </p>
           <div className="flex gap-6 text-sm">

@@ -71,7 +71,7 @@ const Navbar = () => {
             >
               <Wine className="h-5 w-5 text-wine-primary" aria-hidden="true" />
               <span className="font-serif font-bold tracking-tight">
-                Vinos Oficial
+                Vinoteca Tandil
               </span>
             </button>
 

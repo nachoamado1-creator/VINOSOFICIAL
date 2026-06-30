@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Vinos Oficial · Cata de Vinos Experiencia · Tandil",
+  title: "Vinoteca Tandil · Cata de Vinos Experiencia · Tandil",
   description:
     "Sumergete en una experiencia sensorial única en Tandil. Nuestras cavas de vino más exquisitas te esperan en una velada inolvidable.",
   keywords: [
